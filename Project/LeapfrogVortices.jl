@@ -91,9 +91,9 @@ for i = 1:((size(t)[1])-1)
 
 end
 
-plt.plot(p1[:,1], p1[:,2], linecolor = :blue)
-plt.plot!(p2[:,1], p2[:,2], linecolor = :blue)
-plt.plot!(p3[:,1], p3[:,2], linecolor = :red)
-plt.plot!(p4[:,1], p4[:,2], linecolor = :red)
+plt.plot(p1[:,1], p1[:,2], linecolor = :blue, label = "Left Vortex", arrow = :arrow)
+plt.plot!(p2[:,1], p2[:,2], linecolor = :blue, label = false, arrow = :arrow)
+plt.plot!(p3[:,1], p3[:,2], linecolor = :red, label = "Right Vortex", arrow = :arrow)
+plt.plot!(p4[:,1], p4[:,2], linecolor = :red, label = false, arrow = :arrow)
 
-
+plt.savefig("LeapfrogVortices.png")
